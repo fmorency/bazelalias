@@ -1,5 +1,4 @@
-use merk_v1::Merk as merk1;
-use merk_v2::Merk as merk2;
-
 fn main() {
+    let a = merk_v1::Merk::open("/tmp/a.db").unwrap();
+    let b = merk_v2::Merk::open("/tmp/b.db").unwrap();
 }
