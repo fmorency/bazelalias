@@ -29,8 +29,8 @@ dependencies = [
 name = "bazelalias"
 version = "0.1.0"
 dependencies = [
- "merk 2.0.0 (git+https://github.com/MavenRain/merk.git?branch=merk-hash-migration)",
- "merk 2.0.0 (git+https://github.com/liftedinit/merk.git?rev=857bf81963d9282ab03438da5013e1f816bd9da1)",
+ "merk 2.0.0 (git+https://github.com/liftedinit/merk.git?rev=857bf81963d9282ab03438da5013e1f816bd9da1#857bf81963d9282ab03438da5013e1f816bd9da1)",
+ "merk 2.0.0-ll (git+https://github.com/fmorency/merk.git?branch=merk-hash-migration#c4cce0e8358828a337054034d21c27cd4c7580d1)",
 ]
 
 [[package]]
@@ -310,8 +310,8 @@ checksum = "2dffe52ecf27772e601905b7522cb4ef790d2cc203488bbd0e2fe85fcb74566d"
 
 [[package]]
 name = "merk"
-version = "2.0.0"
-source = "git+https://github.com/MavenRain/merk.git?branch=merk-hash-migration#db8586a68dcf8bea31d300b356601d3c8ccaa02c"
+version = "2.0.0-ll"
+source = "git+https://github.com/fmorency/merk.git?branch=merk-hash-migration#c4cce0e8358828a337054034d21c27cd4c7580d1"
 dependencies = [
  "blake3",
  "byteorder",

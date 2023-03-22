@@ -1,5 +1,5 @@
 {
-  "checksum": "8eb354f1b94e7b03e3e33fdc384887a5e23b3e976473b6b5b4a3048af7b0115f",
+  "checksum": "7b78215246301e27559eafaf90388afd1ef9332dede0a192740449086e7aec06",
   "crates": {
     "arrayref 0.3.7": {
       "name": "arrayref",
@@ -138,7 +138,7 @@
               "alias": "merk_v1"
             },
             {
-              "id": "merk 2.0.0",
+              "id": "merk 2.0.0-ll",
               "target": "merk",
               "alias": "merk_v2"
             }
@@ -1699,7 +1699,100 @@
       "version": "2.0.0",
       "repository": {
         "Git": {
-          "remote": "https://github.com/MavenRain/merk.git",
+          "remote": "https://github.com/liftedinit/merk.git",
+          "commitish": {
+            "Rev": "857bf81963d9282ab03438da5013e1f816bd9da1"
+          }
+        }
+      },
+      "targets": [
+        {
+          "Library": {
+            "crate_name": "merk",
+            "crate_root": "src/lib.rs",
+            "srcs": [
+              "**/*.rs"
+            ]
+          }
+        }
+      ],
+      "library_target_name": "merk",
+      "common_attrs": {
+        "compile_data_glob": [
+          "**"
+        ],
+        "crate_features": {
+          "common": [
+            "blake3",
+            "byteorder",
+            "colored",
+            "default",
+            "ed",
+            "full",
+            "hex",
+            "num_cpus",
+            "rand",
+            "rocksdb",
+            "verify"
+          ],
+          "selects": {}
+        },
+        "deps": {
+          "common": [
+            {
+              "id": "blake3 0.3.8",
+              "target": "blake3"
+            },
+            {
+              "id": "byteorder 1.4.3",
+              "target": "byteorder"
+            },
+            {
+              "id": "colored 2.0.0",
+              "target": "colored"
+            },
+            {
+              "id": "digest 0.9.0",
+              "target": "digest"
+            },
+            {
+              "id": "ed 0.3.0",
+              "target": "ed"
+            },
+            {
+              "id": "hex 0.4.3",
+              "target": "hex"
+            },
+            {
+              "id": "num_cpus 1.15.0",
+              "target": "num_cpus"
+            },
+            {
+              "id": "rand 0.8.5",
+              "target": "rand"
+            },
+            {
+              "id": "rocksdb 0.19.0",
+              "target": "rocksdb"
+            },
+            {
+              "id": "thiserror 1.0.40",
+              "target": "thiserror"
+            }
+          ],
+          "selects": {}
+        },
+        "edition": "2018",
+        "version": "2.0.0"
+      },
+      "license": "MIT"
+    },
+    "merk 2.0.0-ll": {
+      "name": "merk",
+      "version": "2.0.0-ll",
+      "repository": {
+        "Git": {
+          "remote": "https://github.com/fmorency/merk.git",
           "commitish": {
             "Branch": "merk-hash-migration"
           }
@@ -1783,7 +1876,7 @@
           "selects": {}
         },
         "edition": "2018",
-        "version": "2.0.0"
+        "version": "2.0.0-ll"
       },
       "license": "MIT"
     },
